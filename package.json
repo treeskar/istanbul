@@ -1,6 +1,6 @@
 {
   "name": "istanbul",
-  "version": "0.3.17",
+  "version": "0.4.5",
   "description": "Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests and browser tests. Built for scale",
   "keywords": [
     "coverage",
@@ -65,7 +65,30 @@
     "Ed S <ejsanders@gmail.com>",
     "Mordy Tikotzky <mordytk@gmail.com>",
     "Haoliang Gao @popomore <sakura9515@gmail.com>",
-    "Roderick Hsiao @roderickhsiao"
+    "Roderick Hsiao @roderickhsiao",
+    "Nikita Gusakov @nkt",
+    "Alex Dunphy @alexdunphy <alexanderdunphy@gmail.com>",
+    "Artemy Tregubenko @arty-name <me@arty.name>",
+    "Arye Lukashevski @aryelu",
+    "@sterlinghw",
+    "Gord Tanner <gord@bithound.io>",
+    "Tom MacWright @tmcw <tom@macwright.org>",
+    "Kitson Kelly @kitsonk",
+    "@asa-git",
+    "@RoCat",
+    "Ian Page Hands @iphands <iphands@gmail.com>",
+    "Eddie Gurnee @pegurnee",
+    "Kevin Decker @kpdecker <kpdecker@gmail.com>",
+    "isaacs @isaacs <i@izs.me>",
+    "Steve Gray @steve-gray",
+    "Prayag Verma @pra85 <prayag.verma@gmail.com>",
+    "Abe Fehr @abejfehr <abe.fehr@gmail.com>",
+    "Brian Woodward @doowb <brian.woodward@gmail.com>",
+    "@Victorystick",
+    "@inversion",
+    "@JamesMGreene",
+    "@ChALkeR",
+    "@graingert"
   ],
   "scripts": {
     "pretest": "jshint index.js lib/ test/ && ./download-escodegen-browser.sh",
@@ -85,31 +108,31 @@
     "url": "git://github.com/gotwarlost/istanbul.git"
   },
   "dependencies": {
-    "esprima": "2.4.x",
-    "escodegen": "1.6.x",
-    "handlebars": "3.0.0",
+    "abbrev": "1.0.x",
+    "async": "1.x",
+    "escodegen": "1.8.x",
+    "esprima": "2.7.x",
+    "glob": "^5.0.15",
+    "handlebars": "^4.0.1",
     "mkdirp": "0.5.x",
     "nopt": "3.x",
-    "fileset": "0.2.x",
-    "which": "1.0.x",
-    "async": "1.x",
-    "supports-color": "1.3.x",
-    "abbrev": "1.0.x",
-    "wordwrap": "0.0.x",
+    "once": "1.x",
     "resolve": "1.1.x",
     "js-yaml": "3.x",
-    "once": "1.x",
-    "source-map": "0.4.x"
+    "source-map": "0.4.x",
+    "supports-color": "^3.1.0",
+    "which": "^1.1.1",
+    "wordwrap": "^1.0.0"
   },
   "devDependencies": {
-    "rimraf": "2.2.x",
-    "nodeunit": "0.9.x",
-    "jshint": "2.5.x",
-    "requirejs": "2.x",
     "coveralls": "2.x",
+    "jshint": "^2.8.0",
+    "nodeunit": "0.9.x",
+    "requirejs": "2.x",
     "glob": "4.4.x",
     "browserify": "9.x",
     "traceur": "0.x",
-    "typescript": "1.5.0-beta"
+    "typescript": "1.5.0-beta",
+    "rimraf": "^2.4.3"
   }
 }
